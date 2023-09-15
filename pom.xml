@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.wellch4n</groupId>
+    <artifactId>silver-bullet</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>silver-bullet-json</module>
+        <module>silver-bullet-test</module>
+        <module>silver-bullet-cache</module>
+        <module>silver-bullet-cache/silver-bullet-cache-guava</module>
+        <module>silver-bullet-cache/silver-bullet-cache-redis</module>
+        <module>silver-bullet-database</module>
+        <module>silver-bullet-database/silver-bullet-database-jdbc</module>
+        <module>silver-bullet-database/silver-bullet-database-elasticsearch</module>
+        <module>silver-bullet-common</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>
