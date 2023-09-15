@@ -57,6 +57,6 @@ public class DatabaseTest {
         PDFInfoRepository repository = database.getRepository(PDFInfoRepository.class);
         System.out.println(JSON.toString(repository.findAll()));
         System.out.println(JSON.toString(repository.findById("qfkakIkBgtC14LFco0-Y").orElse(null)));
-        System.out.println(JSON.toString(repository.findAllByContent("上饶市人民政府")));
+        System.out.println(JSON.toString(repository.findAllByContent("")));
     }
 }
