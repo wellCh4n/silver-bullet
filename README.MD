@@ -37,4 +37,9 @@ public interface TestRepository extends JpaRepository<Test, Long> {
 
 ---
 ## silver-bullet-lock 锁适配
-Coming soon...
+| Middleware | Lock / Unlock |   TryLock   |
+|:----------:|:-------------:|:-----------:|
+|   Redis    |       ✅       |      ✅      |
+| Zookeeper  |  Coming soon  | Coming soon |
+
+[Redis Code Example](https://github.com/wellCh4n/silver-bullet/blob/main/silver-bullet-lock/silver-bullet-lock-redis/src/test/java/com/github/wellch4n/silver/bullet/lock/redis/RedisLockTest.java)
