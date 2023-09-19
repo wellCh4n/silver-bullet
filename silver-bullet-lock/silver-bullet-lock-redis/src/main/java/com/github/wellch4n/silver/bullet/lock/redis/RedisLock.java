@@ -41,6 +41,7 @@ public class RedisLock extends Lock {
             ClusterServersConfig clusterServersConfig = config.useClusterServers();
             clusterServersConfig.addNodeAddress(redisLockOptions.getNodes().toArray(new String[]{}));
             this.redissonClient = Redisson.create(config);
+            return;
         }
         throw new RuntimeException();
     }
