@@ -2,13 +2,8 @@ package com.github.wellch4n.silver.bullet.lock.redis;
 
 import com.github.wellch4n.silver.bullet.lock.api.Lock;
 import com.github.wellch4n.silver.bullet.lock.api.LockFactory;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.concurrent.Callable;
 
 /**
  * @author wellCh4n
