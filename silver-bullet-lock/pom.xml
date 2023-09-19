@@ -5,20 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.wellch4n</groupId>
-    <artifactId>silver-bullet</artifactId>
+    <artifactId>silver-bullet-lock</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>silver-bullet-json</module>
-        <module>silver-bullet-test</module>
-        <module>silver-bullet-cache</module>
-        <module>silver-bullet-cache/silver-bullet-cache-guava</module>
-        <module>silver-bullet-cache/silver-bullet-cache-redis</module>
-        <module>silver-bullet-database</module>
-        <module>silver-bullet-database/silver-bullet-database-jdbc</module>
-        <module>silver-bullet-database/silver-bullet-database-elasticsearch</module>
-        <module>silver-bullet-common</module>
-        <module>silver-bullet-lock</module>
+        <module>silver-bullet-lock-redis</module>
+        <module>silver-bullet-lock-api</module>
     </modules>
 
     <properties>
