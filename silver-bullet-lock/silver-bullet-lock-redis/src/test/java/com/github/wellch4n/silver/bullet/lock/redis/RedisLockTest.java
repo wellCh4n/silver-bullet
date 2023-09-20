@@ -6,6 +6,8 @@ import com.github.wellch4n.silver.bullet.lock.api.WaitTime;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import java.util.HashSet;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -18,9 +20,9 @@ public class RedisLockTest {
 
     @BeforeAll
     public static void startup() {
-        RedisLockOptions redisLockOptions = new RedisLockOptions();
-        redisLockOptions.setServerType(RedisServerType.SINGLE);
-        redisLockOptions.setNodes("redis://127.0.0.1:6379");
+        Set<String> nodes = new HashSet<>();
+        nodes.add("redis://127.0.0.1:6379");
+        RedisLockOptions redisLockOptions = new RedisLockOptions(RedisServerType.SINGLE, nodes);
         lock = LockFactory.newInstance(redisLockOptions);
     }
 
