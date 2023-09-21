@@ -18,20 +18,8 @@ class RedisLock(options: LockOptions) : Lock(options) {
 
     init {
         val redisLockOptions = options as RedisLockOptions
-        when(redisLockOptions.serverType) {
-            RedisServerType.SINGLE -> {
-                val node = redisLockOptions.nodes.first()
-                val config = Config()
-                config.useSingleServer().setAddress(node)
-                this.redissonClient = Redisson.create(config)
-            }
-            RedisServerType.CLUSTER -> {
-                val toTypedArray = redisLockOptions.nodes.toTypedArray()
-                val config = Config()
-                config.useClusterServers().addNodeAddress(*toTypedArray)
-                this.redissonClient = Redisson.create(config)
-            }
-        }
+        val (serverType) = redisLockOptions
+        this.redissonClient = serverType.init(redisLockOptions)
     }
 
     override fun lock(key: String) {

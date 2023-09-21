@@ -22,7 +22,7 @@ public class RedisLockTest {
     public static void startup() {
         Set<String> nodes = new HashSet<>();
         nodes.add("redis://127.0.0.1:6379");
-        RedisLockOptions redisLockOptions = new RedisLockOptions(RedisServerType.SINGLE, nodes);
+        RedisLockOptions redisLockOptions = new RedisLockOptions(RedisServer.SINGLE, nodes);
         lock = LockFactory.newInstance(redisLockOptions);
     }
 
