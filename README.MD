@@ -27,11 +27,11 @@ public interface TestRepository extends JpaRepository<Test, Long> {
 
 ---
 ## silver-bullet-json JSON适配
-| Middleware |  Serialize  | Deserialize |
-|:----------:|:-----------:|:-----------:|
-| FastJSON 2 |      ✅      |      ✅      |
-|  Jackson   |      ✅      |      ✅      |
-|    GSON    | Coming soon | Coming soon |
+| Middleware |  Serialize  | Deserialize | PartialObjectParse |
+|:----------:|:-----------:|:-----------:|:------------------:|
+| FastJSON 2 |      ✅      |      ✅      |         ✅          |
+|  Jackson   |      ✅      |      ✅      |    Coming soon     |
+|    GSON    | Coming soon | Coming soon |    Coming soon     |
 
 [Code Example](https://github.com/wellCh4n/silver-bullet/blob/main/silver-bullet-test/src/test/java/com/github/wellch4n/silver/bullet/test/JSONTest.java)
 
