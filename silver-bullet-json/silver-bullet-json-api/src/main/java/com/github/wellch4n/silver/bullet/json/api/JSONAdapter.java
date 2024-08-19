@@ -10,6 +10,8 @@ public interface JSONAdapter {
 
     JSONObject toObject(String str);
 
+    JSONObject partialToObject(String partialStr);
+
     JSONArray toArray(String str);
 
     String toString(JSONObject object);

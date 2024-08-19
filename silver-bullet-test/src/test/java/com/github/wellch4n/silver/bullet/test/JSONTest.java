@@ -17,4 +17,11 @@ public class JSONTest {
         JSONArray array = JSON.toArray("[{\"1\":\"2\"}]");
         Assertions.assertEquals(1, array.size());
     }
+
+    @Test
+    public void testPartialStr() {
+        JSONObject jsonObject = JSON.partialToObject("{\"name\": \"Alice\", \"age\": 30, \"city\": \"New Yor");
+        String city = (String) jsonObject.get("city");
+        Assertions.assertEquals("New Yor", city);
+    }
 }

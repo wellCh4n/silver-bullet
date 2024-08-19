@@ -33,6 +33,11 @@ public class JacksonAdapter implements JSONAdapter {
     }
 
     @Override
+    public JSONObject partialToObject(String partialStr) {
+        return null;
+    }
+
+    @Override
     public JSONArray toArray(String str) {
         try {
             JsonNode jsonNode = objectMapper.readTree(str);

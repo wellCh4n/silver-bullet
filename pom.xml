@@ -10,6 +10,10 @@
     <packaging>pom</packaging>
     <modules>
         <module>silver-bullet-json</module>
+        <module>silver-bullet-json/silver-bullet-json-api</module>
+        <module>silver-bullet-json/silver-bullet-json-fastjson</module>
+        <module>silver-bullet-json/silver-bullet-json-gson</module>
+        <module>silver-bullet-json/silver-bullet-json-jackson</module>
         <module>silver-bullet-test</module>
         <module>silver-bullet-cache</module>
         <module>silver-bullet-cache/silver-bullet-cache-guava</module>

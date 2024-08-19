@@ -27,6 +27,10 @@ public class JSON {
         return jsonAdapter.toObject(str);
     }
 
+    public static JSONObject partialToObject(String partialStr) {
+        return jsonAdapter.partialToObject(partialStr);
+    }
+
     public static JSONArray toArray(String str) {
         return jsonAdapter.toArray(str);
     }

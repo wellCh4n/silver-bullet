@@ -12,7 +12,7 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <silver.bullet.json>jackson</silver.bullet.json>
+        <silver.bullet.json>fastjson</silver.bullet.json>
         <silver.bullet.cache>guava</silver.bullet.cache>
     </properties>
 
