@@ -34,7 +34,14 @@ public interface TestRepository extends JpaRepository<Test, Long> {
 |    GSON    | Coming soon | Coming soon |    Coming soon     |
 
 [Code Example](https://github.com/wellCh4n/silver-bullet/blob/main/silver-bullet-test/src/test/java/com/github/wellch4n/silver/bullet/test/JSONTest.java)
-
+```java
+@Test
+public void testPartialStr() {
+    JSONObject jsonObject = JSON.partialToObject("{\"name\": \"Alice\", \"age\": 30, \"city\": \"New Yor");
+    String city = (String) jsonObject.get("city");
+    Assertions.assertEquals("New Yor", city);
+}
+```
 ---
 ## silver-bullet-lock 锁适配
 | Middleware | Lock / Unlock |   TryLock   |
